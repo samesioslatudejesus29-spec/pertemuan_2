@@ -1,0 +1,103 @@
+/* =========================================
+   1. RESET & ATURAN GLOBAL
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Format Warna 1: Nama Warna (white, lightgray) */
+    background-color: lightgray;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 40px 0;
+}
+
+/* =========================================
+   2. BOX MODEL & SELECTOR ID (#)
+   ========================================= */
+/* Selector ID: Kotak Utama Berlebar Tetap & Berada di Tengah */
+#kartu-profil {
+    width: 400px;                 /* Lebar tetap */
+    margin: 0 auto;               /* Berada di tengah halaman */
+    padding: 25px;                /* Padding */
+    
+    /* Format Warna 2: HEX Code (#ffffff) */
+    background-color: #ffffff;    
+    
+    border: 2px solid #333333;     /* Border */
+    border-radius: 12px;           /* Border-radius */
+    text-align: center;            /* Alignment Teks */
+}
+
+/* =========================================
+   3. TEKS & SELECTOR CLASS (.)
+   ========================================= */
+/* Selector Class untuk Nama */
+.nama-profil {
+    font-size: 26px;
+    text-transform: uppercase;     /* Text-transform */
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+/* Selector Turunan (Descendant Selector): Mengatur p di dalam #kartu-profil */
+#kartu-profil .profesi {
+    font-size: 14px;
+    
+    /* Format Warna 3: RGB / RGBA */
+    color: rgba(100, 100, 100, 0.9); 
+    
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.deskripsi {
+    font-size: 15px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   4. DISPLAY INLINE-BLOCK (Minimal 2 Elemen)
+   ========================================= */
+
+/* Selector Grup (Grouping Selector): h3 dan ul */
+h3, ul {
+    margin-bottom: 10px;
+}
+
+.daftar-keahlian {
+    list-style: none;
+}
+
+/* Display inline-block pada ELEMEN 1: Label Keahlian */
+.label-skill {
+    display: inline-block;        /* Elemen inline-block ke-1 */
+    background-color: #e0e0e0;
+    color: black;                 /* Format Warna Nama */
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Display inline-block pada ELEMEN 2: Tombol / Tautan */
+#tombol-kontak {
+    display: inline-block;        /* Elemen inline-block ke-2 */
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(41, 128, 185); /* Format Warna RGB */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#tombol-kontak:hover {
+    background-color: rgb(31, 97, 141);
+}
