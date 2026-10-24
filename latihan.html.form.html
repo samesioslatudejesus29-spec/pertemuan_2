@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pendaftaran</title>
+    <!-- Masukkan kode CSS di dalam tag <style> di bagian <head> -->
+    <style>
+        body { font-family: Arial; background: #f4f8ff; }
+        h1 { color: #1a56b0; text-align: center; }
+        table { border-collapse: collapse; width: 100%; }
+        th { background: #1a56b0; color: white; padding: 6px; }
+        td { border: 1px solid #ccd; padding: 6px; }
+        .aktif { background: #e6eefb; }
+    </style>
+</head>
+<body>
+
+    <!-- Tambahkan Judul Form -->
+    <h1>Form Pendaftaran</h1>
+
+    <!-- Kode HTML Form dari foto kedua -->
+    <form action="proses.php" method="post">
+        Nama: <input type="text" name="nama"><br>
+        Email: <input type="email" name="email"><br>
+        Jenis Kelamin:
+        <input type="radio" name="jk" value="L"> Laki-laki
+        <input type="radio" name="jk" value="P"> Perempuan<br>
+        Hobi:
+        <input type="checkbox" name="hobi" value="baca"> Membaca
+        <input type="checkbox" name="hobi" value="musik"> Musik<br>
+        Jurusan:
+        <select name="jurusan">
+            <option>Informatika</option>
+            <option>Sistem Informasi</option>
+        </select><br>
+        Alamat: <textarea name="alamat" rows="3"></textarea><br>
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+</html>

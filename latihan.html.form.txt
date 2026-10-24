@@ -1,0 +1,17 @@
+<form action="proses.php" method="post">
+Nama: <input type="text" name="nama"><br>
+Email: <input type="email" name="email"><br>
+Jenis Kelamin:
+<input type="radio" name="jk" value="L"> Laki-laki
+<input type="radio" name="jk" value="P"> Perempuan<br>
+Hobi:
+<input type="checkbox" name="hobi" value="baca"> Membaca
+<input type="checkbox" name="hobi" value="musik"> Musik<br>
+Jurusan:
+<select name="jurusan">
+<option>Informatika</option>
+<option>Sistem Informasi</option>
+</select><br>
+Alamat: <textarea name="alamat" rows="3"></textarea><br>
+<button type="submit">Kirim</button>
+<button type="reset">Reset</button>
